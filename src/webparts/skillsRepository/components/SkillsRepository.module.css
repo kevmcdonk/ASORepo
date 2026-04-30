@@ -1,0 +1,373 @@
+.container {
+  --cp-bg-top: #f4f8ff;
+  --cp-bg-bottom: #eef3fb;
+  --cp-surface: #ffffff;
+  --cp-border: #d8e6ff;
+  --cp-accent: #2563eb;
+  --cp-accent-strong: #1d4ed8;
+  --cp-text: #12213d;
+  --cp-muted: #5a6b86;
+  --cp-success-bg: #e7f7ec;
+  --cp-success-text: #166534;
+  --cp-error-bg: #feecee;
+  --cp-error-text: #b42318;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid var(--cp-border);
+  background:
+    radial-gradient(1100px 420px at 10% -10%, #dbeafe 0%, rgba(219, 234, 254, 0) 62%),
+    linear-gradient(165deg, var(--cp-bg-top) 0%, var(--cp-bg-bottom) 100%);
+  color: var(--cp-text);
+  font-family: "Segoe UI", "Segoe UI Variable", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--cp-text);
+  margin: 0;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerActions :global(.ms-Button) {
+  border-radius: 999px;
+  border: 1px solid #c8dcff;
+  background: #f7faff;
+}
+
+.headerActions :global(.ms-Button:hover) {
+  border-color: #9ac0ff;
+  background: #edf4ff;
+}
+
+/* ── Toolbar (search + filter) ───────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid #d8e5fb;
+  border-radius: 14px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.searchBox {
+  flex: 1;
+  min-width: 220px;
+}
+
+.searchBox :global(.ms-SearchBox) {
+  border-radius: 10px;
+  border-color: #c9dcff;
+}
+
+.searchBox :global(.ms-SearchBox:hover),
+.searchBox :global(.ms-SearchBox.is-active) {
+  border-color: #8cb6ff;
+}
+
+.categoryDropdown {
+  min-width: 180px;
+}
+
+.categoryDropdown :global(.ms-Dropdown-title) {
+  border-radius: 10px;
+  border-color: #c9dcff;
+}
+
+.skillCount {
+  font-size: 12px;
+  color: var(--cp-muted);
+  border: 1px solid #cfe0ff;
+  background: #f4f8ff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* ── Path Info Banner ────────────────────────────────────────── */
+.pathInfoBanner {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid #d8e5fb;
+  border-left: 4px solid var(--cp-accent);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: var(--cp-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pathInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pathInfoLabel {
+  color: #354866;
+  font-weight: 600;
+  min-width: 130px;
+}
+
+.pathInfoValue {
+  font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
+  color: #1f3458;
+  word-break: break-all;
+}
+
+/* ── Skills Grid ─────────────────────────────────────────────── */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+/* ── Skill Card ──────────────────────────────────────────────── */
+.skillCard {
+  border: 1px solid #d9e7ff;
+  border-radius: 16px;
+  padding: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.skillCard:hover {
+  transform: translateY(-2px);
+  border-color: #b8d1ff;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.14);
+}
+
+.skillCardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.skillIcon {
+  flex-shrink: 0;
+  color: var(--cp-accent);
+  font-size: 20px;
+}
+
+.skillName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--cp-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.skillDescription {
+  font-size: 12px;
+  color: var(--cp-muted);
+  margin: 0;
+  line-height: 1.4;
+  min-height: 16px;
+}
+
+.skillMeta {
+  font-size: 11px;
+  color: #60759a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillMetaItem {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.categoryBadge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #c9dcff;
+  background: #eff5ff;
+  color: #1e3f8f;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+/* ── Card Actions ────────────────────────────────────────────── */
+.cardActions {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.cardActions :global(.ms-Button) {
+  border-radius: 999px;
+  border: 1px solid #c7dcff;
+  background: #f5f9ff;
+}
+
+.cardActions :global(.ms-Button:hover) {
+  border-color: #97bfff;
+  background: #eaf3ff;
+}
+
+/* ── Operation Result ────────────────────────────────────────── */
+.operationResult {
+  font-size: 11px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.operationResultSuccess {
+  color: var(--cp-success-text);
+  background: var(--cp-success-bg);
+}
+
+.operationResultError {
+  color: var(--cp-error-text);
+  background: var(--cp-error-bg);
+}
+
+/* ── Empty / Loading / Error States ─────────────────────────── */
+.stateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  gap: 12px;
+  color: var(--cp-muted);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px dashed #c9dcff;
+  border-radius: 14px;
+}
+
+.stateIcon {
+  font-size: 40px;
+  color: #7f97c3;
+}
+
+.stateMessage {
+  font-size: 14px;
+  max-width: 320px;
+}
+
+/* ── Dark theme overrides ────────────────────────────────────── */
+.isDarkTheme .skillCard {
+  background: linear-gradient(180deg, #1d2637 0%, #182133 100%);
+  border-color: #32415f;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.45);
+}
+
+.isDarkTheme .pathInfoBanner {
+  background: rgba(23, 34, 53, 0.86);
+  border-color: #324567;
+}
+
+.isDarkTheme {
+  --cp-bg-top: #101827;
+  --cp-bg-bottom: #0f172a;
+  --cp-surface: #172033;
+  --cp-border: #243450;
+  --cp-accent: #7db0ff;
+  --cp-accent-strong: #9bc2ff;
+  --cp-text: #e6efff;
+  --cp-muted: #a9bbda;
+}
+
+.isDarkTheme .title,
+.isDarkTheme .skillName {
+  color: #e8efff;
+}
+
+.isDarkTheme .skillDescription,
+.isDarkTheme .skillMeta,
+.isDarkTheme .skillCount,
+.isDarkTheme .pathInfoLabel,
+.isDarkTheme .pathInfoValue,
+.isDarkTheme .stateContainer {
+  color: #afc2e2;
+}
+
+.isDarkTheme .toolbar,
+.isDarkTheme .stateContainer {
+  background: rgba(20, 31, 50, 0.8);
+  border-color: #324567;
+}
+
+.isDarkTheme .categoryBadge {
+  border-color: #436097;
+  background: rgba(68, 95, 153, 0.24);
+  color: #dce9ff;
+}
+
+.isDarkTheme .headerActions :global(.ms-Button),
+.isDarkTheme .cardActions :global(.ms-Button) {
+  color: #dbe8ff;
+  border-color: #45639a;
+  background: rgba(67, 96, 151, 0.2);
+}
+
+.isDarkTheme .headerActions :global(.ms-Button:hover),
+.isDarkTheme .cardActions :global(.ms-Button:hover) {
+  border-color: #6f95d6;
+  background: rgba(95, 130, 196, 0.26);
+}
+
+.isDarkTheme .searchBox :global(.ms-SearchBox),
+.isDarkTheme .categoryDropdown :global(.ms-Dropdown-title) {
+  background: #17233a;
+  border-color: #3d5687;
+  color: #e3edff;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .toolbar {
+    padding: 8px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.22.2",
+    "libraryName": "asorepo",
+    "libraryId": "a4e7b3c1-2d5f-4a8e-9c6b-0f1e2d3a4b5c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "solutionName": "ASORepo",
+    "solutionShortDescription": "AI Skills Org Repository",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

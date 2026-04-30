@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "asorepo-client-side-solution",
+    "id": "a4e7b3c1-2d5f-4a8e-9c6b-0f1e2d3a4b5c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "AI Skills Org Repository"
+      },
+      "longDescription": {
+        "default": "ASORepo is the AI Skills Org Repository — a central SharePoint-based catalogue of AI agent skills that can be copied to your OneDrive Cowork folder or downloaded to your local machine for use with VS Code Copilot agents."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ASORepo Feature",
+        "description": "The feature that activates elements of the ASORepo — AI Skills Org Repository solution.",
+        "id": "b5f8d4c2-3e6a-5b9f-0d7c-1a2f3e4d5c6b",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/asorepo.sppkg"
+  }
+}

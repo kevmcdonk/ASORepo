@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+  "alias": "SkillsRepositoryWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "ASORepo"
+      },
+      "description": {
+        "default": "AI Skills Org Repository — browse, copy to OneDrive Cowork, or download skills to your local machine"
+      },
+      "officeFabricIconFontName": "BookmarksMirrored",
+      "properties": {
+        "skillsSiteUrl": "/sites/OrgAISkills",
+        "skillsLibraryName": "Skills",
+        "coworkOneDrivePath": "Copilot/Agents/Skills",
+        "coworkSubfolderName": "",
+        "localMachinePath": "C:\\Users\\{username}\\.agents\\skills"
+      }
+    }
+  ]
+}
