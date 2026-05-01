@@ -8,7 +8,7 @@
     "environment": "spo",
     "packageManager": "npm",
     "useGulp": false,
-    "solutionName": "ASORepo",
+    "solutionName": "AI Skills Repo",
     "solutionShortDescription": "AI Skills Org Repository",
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

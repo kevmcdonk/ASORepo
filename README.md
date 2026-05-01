@@ -63,7 +63,7 @@ npm run start
 https://yourtenant.sharepoint.com/sites/OrgAISkills/_layouts/15/workbench.aspx?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js
 ```
 
-3. Add the ASORepo web part.
+3. Add the AI Skills Repo web part.
 4. Open the web part property pane and confirm settings:
 	- Skills site URL
 	- Skills library name
@@ -82,7 +82,7 @@ Optional: You can open the local workbench at `https://localhost:4321/temp/workb
 
 1. Upload `asorepo.sppkg` to your **SharePoint App Catalog**.
 2. Approve the Graph API permission requests (`Files.ReadWrite`, `Sites.Read.All`) in the **SharePoint Admin Center → Advanced → API access**.
-3. Add the **ASORepo** web part to any SharePoint page.
+3. Add the **AI Skills Repo** web part to any SharePoint page.
 
 ---
 

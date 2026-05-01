@@ -35,7 +35,9 @@ export interface ISkillsRepositoryState {
   /** General error message */
   errorMessage: string;
   /** Map of skill ID → operation in progress */
-  operationInProgress: { [skillId: string]: "copy" | "download" | null };
+  operationInProgress: {
+    [skillId: string]: "copy" | "download" | "publish" | null;
+  };
   /** Map of skill ID → last operation result message */
   operationResult: {
     [skillId: string]: { success: boolean; message: string };
@@ -44,4 +46,22 @@ export interface ISkillsRepositoryState {
   selectedCategory: string;
   /** Sorted list of unique categories */
   categories: string[];
+  /** Whether the publish panel is open */
+  isPublishPanelOpen: boolean;
+  /** Skill currently selected for publish */
+  activePublishSkillId?: string;
+  /** Agent Assets-enabled SharePoint sites */
+  publishTargetSites: Array<{
+    title: string;
+    url: string;
+    pathSegments: string[];
+  }>;
+  /** Whether publish targets are loading */
+  isPublishTargetsLoading: boolean;
+  /** Publish target discovery error */
+  publishTargetsError: string;
+  /** Current path in the publish site browser */
+  publishTargetPath: string[];
+  /** Search text within the publish site browser */
+  publishTargetSearchText: string;
 }

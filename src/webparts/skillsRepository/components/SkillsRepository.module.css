@@ -353,10 +353,161 @@
   color: #e3edff;
 }
 
+.publishPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.publishPanelSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid #d9e7ff;
+  border-radius: 12px;
+  background: #f7faff;
+}
+
+.publishPanelLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #4f6488;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.publishPanelValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cp-text);
+}
+
+.publishPanelDescription {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--cp-muted);
+}
+
+.publishPanelToolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.publishSearchBox {
+  flex: 1;
+  min-width: 220px;
+}
+
+.publishSearchBox :global(.ms-SearchBox) {
+  border-radius: 10px;
+  border-color: #c9dcff;
+}
+
+.publishBreadcrumbWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.publishBreadcrumbLabel {
+  font-size: 11px;
+  color: #5d7295;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.publishBreadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 12px;
+  background: #f5f9ff;
+  border: 1px solid #d8e5fb;
+}
+
+.publishCurrentSiteCard,
+.publishSiteCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #d9e7ff;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+}
+
+.publishSiteList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.publishSiteHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.publishSiteName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cp-text);
+}
+
+.publishSiteUrl {
+  font-size: 12px;
+  color: var(--cp-muted);
+  word-break: break-all;
+}
+
+.publishSiteActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.isDarkTheme .publishPanelSummary,
+.isDarkTheme .publishBreadcrumb,
+.isDarkTheme .publishCurrentSiteCard,
+.isDarkTheme .publishSiteCard {
+  background: rgba(20, 31, 50, 0.82);
+  border-color: #324567;
+}
+
+.isDarkTheme .publishPanelLabel,
+.isDarkTheme .publishBreadcrumbLabel,
+.isDarkTheme .publishSiteUrl {
+  color: #afc2e2;
+}
+
+.isDarkTheme .publishPanelValue,
+.isDarkTheme .publishSiteName {
+  color: #e8efff;
+}
+
 @media (max-width: 640px) {
   .container {
     padding: 14px;
     border-radius: 14px;
+  }
+
+  .publishPanelToolbar,
+  .publishCurrentSiteCard,
+  .publishSiteCard,
+  .publishSiteActions {
+    flex-direction: column;
+  }
+
+  .publishSiteActions {
+    align-items: stretch;
   }
 
   .title {

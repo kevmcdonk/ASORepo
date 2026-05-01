@@ -19,7 +19,7 @@
         "default": "AI Skills Org Repository"
       },
       "longDescription": {
-        "default": "ASORepo is the AI Skills Org Repository — a central SharePoint-based catalogue of AI agent skills that can be copied to your OneDrive Cowork folder or downloaded to your local machine for use with VS Code Copilot agents."
+        "default": "AI Skills Repo is the AI Skills Org Repository — a central SharePoint-based catalogue of AI agent skills that can be copied to your OneDrive Cowork folder or downloaded to your local machine for use with VS Code Copilot agents."
       },
       "screenshotPaths": [],
       "videoUrl": "",
