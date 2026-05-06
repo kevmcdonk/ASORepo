@@ -498,6 +498,9 @@ export default class SkillsRepository extends React.Component<
       ? operationInProgress[activeSkill.id] !== null
       : true;
 
+    //TODO: work out the point of this agentskillbusy
+
+
     const breadcrumbNodes = publishTargetPath.reduce<IPublishSiteTreeNode[]>(
       (items, _segment, index) => {
         items.push(this.getPublishNode(root, publishTargetPath.slice(0, index + 1)));
@@ -580,9 +583,12 @@ export default class SkillsRepository extends React.Component<
                 onClick={() => this.publishToSharePoint(activeSkill, currentNode.site!)}
                 disabled={activeSkillBusy}
               >
-                {activeSkillBusy
+                {
+                
+                /*activeSkillBusy
                   ? strings.PublishingLabel
-                  : strings.PublishHereLabel}
+                  : strings.PublishHereLabel*/
+                  strings.PublishHereLabel}
               </PrimaryButton>
             </div>
           )}
@@ -663,13 +669,19 @@ export default class SkillsRepository extends React.Component<
                           </DefaultButton>
                         )}
                         {canPublish && site && (
+                          
                           <PrimaryButton
                             onClick={() => this.publishToSharePoint(activeSkill!, site)}
-                            disabled={isBusy}
+                            disabled={
+                              //isBusy
+                              false
+                              }
                           >
-                            {isBusy
+                            {
+                            /*isBusy
                               ? strings.PublishingLabel
-                              : strings.PublishHereLabel}
+                              : strings.PublishHereLabel*/
+                              strings.PublishHereLabel}
                           </PrimaryButton>
                         )}
                       </div>
