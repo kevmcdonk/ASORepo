@@ -4,6 +4,9 @@ A SharePoint Framework (SPFx 1.22) web part that provides a central, browsable c
 
 - **Copy to Cowork** — copy a skill directly into their OneDrive in the configured Cowork/Copilot agents folder (synced locally by OneDrive for Business).
 - **Download** — trigger a browser download to save the skill file to their local machine for use with local VS Code.
+- **Publish** — copies the skill to a defined SharePoint site to use as a Skill in SharePoint
+<img width="830" height="461" alt="ASORepoScreenshot" src="https://github.com/user-attachments/assets/66db147b-6f4f-457c-a721-441d55c2e715" />
+
 
 ---
 
