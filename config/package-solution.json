@@ -3,7 +3,7 @@
   "solution": {
     "name": "asorepo-client-side-solution",
     "id": "a4e7b3c1-2d5f-4a8e-9c6b-0f1e2d3a4b5c",
-    "version": "1.0.0.0",
+    "version": "1.0.1.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,7 +30,7 @@
         "title": "ASORepo Feature",
         "description": "The feature that activates elements of the ASORepo — AI Skills Org Repository solution.",
         "id": "b5f8d4c2-3e6a-5b9f-0d7c-1a2f3e4d5c6b",
-        "version": "1.0.0.0"
+        "version": "1.0.1.0"
       }
     ],
     "webApiPermissionRequests": [

@@ -38,6 +38,8 @@ If you leave a field blank, the built-in default is used.
 2. Optionally create sub-folders to group skills by category — sub-folder names become the category labels in the UI.
 3. Upload `.md` skill files. The file's **Description** column (internal name: `_ExtendedDescription`) is shown on the card.
 
+To accelerate this, you can also use the site-template/template.xml and PnP PowerShell to set the site template.
+
 ### 4. Build and package
 
 ```bash

@@ -152,7 +152,7 @@ export class SkillsService {
     const categoryParts =
       libraryIndex >= 0 ? dirParts.slice(libraryIndex + 1) : [];
     const category =
-      categoryParts.length > 0 ? categoryParts.join(" / ") : "General";
+      categoryParts.length > 0 ? categoryParts[0] : "General";
 
     return {
       id: String(item.Id),
